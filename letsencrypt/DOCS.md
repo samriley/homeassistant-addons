@@ -94,6 +94,8 @@ transip_api_key: ''
 inwx_username: ''
 inwx_password: ''
 inwx_shared_secret: ''
+namecheap_username: ''
+namecheap_api_key: ''
 ```
 
 ## Advanced
@@ -509,6 +511,25 @@ on the DNS zone to be used for authentication.
     inwx_username: user
     inwx_password: password
     inwx_shared_secret: ABCDEFGHIJKLMNOPQRSTUVWXYZ012345
+  ```
+
+</details>
+
+<details>
+  <summary>Namecheap</summary>
+
+  Example configuration:
+  ```yaml
+  email: your.email@example.com
+  domains:
+    - your.domain.tld
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+  challenge: dns
+  dns:
+    provider: dns-namecheap
+    namecheap_username: user
+    namecheap_api_key: api_key
   ```
 
 </details>
